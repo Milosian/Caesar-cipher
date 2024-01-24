@@ -1,2 +1,2 @@
 # Caesar-cipher
-C++ encode program by Caesar cipher
+C++ Encoding program by Caesar cipher

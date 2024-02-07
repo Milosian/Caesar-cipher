@@ -1,0 +1,31 @@
+#include <iostream>
+
+using namespace std;
+
+void cezar(char pword[100], char encrypted[100]) {
+
+    for (int i = 0; i < strlen(pword); i++) {
+        if (pword[i] != ' ') {
+            encrypted[i] = (int)pword[i] + 3;
+            cout << (char)encrypted[i];
+        }
+    }
+}
+
+int main()
+{
+    char pword[100];
+    char encrypted[100];
+    char way = 'n';
+    bool c;
+    cout << "Create password: ";
+    cin.getline(pword, 100);
+    cout << "Encrypted password: ";
+    cezar(pword, encrypted);
+    cout << "\nDo you want encrypt a new password? y/n: ";
+    cin >> way;
+    if(way == 'y')
+    {
+        goto(17);
+    }
+}
